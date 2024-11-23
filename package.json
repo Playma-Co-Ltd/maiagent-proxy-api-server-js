@@ -1,0 +1,21 @@
+{
+  "name": "proxy-api-server",
+  "version": "1.0.0",
+  "description": "An API server that proxies requests to Django API server",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "fastify": "^5.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.3",
+    "@types/node": "^22.9.3"
+  },
+  "private": true
+}
